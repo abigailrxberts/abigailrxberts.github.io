@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'content content content-2 content-2'
+    'content content content-2 content-2'
+    'footer footer footer footer';
+    gap: 1rem;
+}
+
+.nav{
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+}
+
+.nav-1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.push{
+    margin-left: auto;
+}
+
+li{
+    padding: 10px;
+}
+
+.header{
+    grid-area: header;
+    padding: 10px;
+}
+
+p{
+    padding: 20px;
+}
+
+.content{
+    grid-area: content;
+    padding: 20px;
+}
+
+#about-me, #my-email, #projects{
+    padding: 20px;
+}
+
+#photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+#prof-links, #skills-list{
+    list-style: none;
+    padding: 10px;
+}
+
+.content-2{
+    grid-area: content-2;
+    padding: 10px;
+}
+
+.footer{
+    grid-area: footer;
+}
